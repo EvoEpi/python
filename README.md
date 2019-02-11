@@ -7,7 +7,7 @@ A collection of Python scripts for handling various data files.
 `methTable.py`: More often than not you want to categorize loci based on their methylation enrichment. `methTable.py` will do just this. As input `methTable.py` requires a file generated from the [bedtools](https://bedtools.readthedocs.io/en/latest/) intersection of an allc file (a vcf-like file generated from [methylpy](https://github.com/yupenghe/methylpy)) and a bed file of loci chromosomal coordinates and identifier (i.e., four columns: chromosome, start, end, identifier):
 
 ```bash
-#allc file requires the vcf header for bedtools recognize it
+#allc file requires the vcf header for bedtools to recognize it
 sed -i '1s/^/##fileformat=VCFv4.2\n/' <allc file>
 #intersection
 bedtools intersect -a <allc file> \
