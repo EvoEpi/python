@@ -10,7 +10,8 @@ A collection of Python scripts for handling various data files.
 #allc file requires the vcf header for bedtools to recognize it
 sed -i '1s/^/##fileformat=VCFv4.2\n/' <allc file>
 #intersection
-bedtools intersect -a <allc file> \
+bedtools intersect \
+-a <allc file> \
 -b <bed file> \
 -wa \
 -wb \
