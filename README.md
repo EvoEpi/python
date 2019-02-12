@@ -26,7 +26,7 @@ Usage:
 python methTable.py --infile=<allc-bed intersect> --taxa=<animal|plant> --outfile=<outfile>
 ```
 
-## Gene[tic|omic]
+## Gen[etic|omic]
 
 `extractSeqFromFasta.py`: A very straightforward script to extract a set of sequence(s) from a fasta file based on id.
 
