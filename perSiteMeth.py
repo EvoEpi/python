@@ -26,6 +26,7 @@ def per_site_mC(d,cov,context):
     for i in context:
         nd=d[(d['con']==i) & (d['tot']>=cov) & (d['bin']==1)]
         nd['per_site_wei']=nd['mec']/nd['tot']
+        nd=nd[['chr','pos','str','per_site_wei']]
         nd.to_csv(i+'_per_site_methylation.tsv', sep='\t', index=False)
 
 if args.taxa=="plant":
