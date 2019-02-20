@@ -94,7 +94,7 @@ if args.taxa=="plant":
     bin(df_final,args.taxa,args.sites,args.coverage,args.qvalue)
     df_final.to_csv(args.outfile, sep='\t', index=False)
 elif args.taxa=="animal":
-    df['con']=df['con'].replace(regex={r'CG[A|C|G|T|N]':'CG',r'C[A|C|T|N][A|C|T|N]':'CH'})
+    df['con']=df['con'].replace(regex={r'CG[A|C|G|T|N]':'CG',r'C[A|C|G|T|N][A|C|G|T|N]':'CH'})
     baseline=df.groupby(['con']).apply(weighted_meth)
     df_stats=df.groupby(['gm','con'],as_index=False).apply(methylation_stats).reset_index()
     df_cg=fdr(df_stats,'CG')
