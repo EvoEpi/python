@@ -29,7 +29,8 @@ parser.add_argument('--windows','-w',type=int,
                                     required=True,
                                     help='Number of windows per upstream of feature, within feature, and downstream of feature.')
 parser.add_argument('--outfile','-o',type=argparse.FileType('w', encoding='UTF-8'),
-                                    required=True,help='Outfile.')
+                                    required=True,
+                                    help='Outfile.')
 args=parser.parse_args()
 
 def allc_to_bed(d,bed=True):
