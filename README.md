@@ -52,7 +52,7 @@ and
 FutureWarning: read_table is deprecated, use read_csv instead, passing sep='\t'.
 ```
 
-No need to worry about these. The first warning is because the flanking region specified runs off the contig/scaffold/chromosome. The second warning is most likely because [pybedtools](https://daler.github.io/pybedtools/) has not updated the [pandas](https://pandas.pydata.org/) function ```python read_table``` to ```python read_csv```.
+No need to worry about these. The first warning is because the flanking region specified runs off the contig/scaffold/chromosome. The second warning is most likely because [pybedtools](https://daler.github.io/pybedtools/) has not updated the [pandas](https://pandas.pydata.org/) function `read_table` to `read_csv`.
 
 Usage:
 
