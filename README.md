@@ -75,5 +75,19 @@ python metaplot.py \
 Usage:
 
 ```bash
-python extractSeqFromFasta.py --ids=<list of ids> --fasta=<in fasta file> --outfile=<out fasta file>
+python extractSeqFromFasta.py \
+--ids=<list of ids> \
+--fasta=<in fasta file> \
+--outfile=<out fasta file>
+```
+
+`motifSearch.py`. Searches for motif sequence and reverse complement of motif from a fasta file in a fasta file and records first and last base pair positions.
+
+Usage:
+
+```bash
+python motifSearch.py \
+--motif=<motif fasta> \
+--search=<fasta to search> \
+--outfile=<outfile (bed format)>
 ```
