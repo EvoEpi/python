@@ -6,15 +6,10 @@ from Bio.Seq import Seq
 from Bio import SeqUtils
 from Bio import SeqIO
 
-parser=argparse.ArgumentParser(description='Search for motif and reverse complement of motif in fasta file and \
-											record first and last bp position.')
-parser.add_argument('--motif','-m',type=str,
-                                	required=True,
-                                    help='Motif fasta file')
-parser.add_argument('--search','-s',required=True,
-									help='Sequence fasta file to search.')
-parser.add_argument('--outfile','-o',type=argparse.FileType('w',encoding='UTF-8'),
-									required=True,help='Outfile (will be in bed format).')
+parser=argparse.ArgumentParser(description='Search for motif and reverse complement of motif in fasta file and record first and last bp position.')
+parser.add_argument('--motif','-m',type=str,required=True,help='Motif fasta file')
+parser.add_argument('--search','-s',required=True,help='Sequence fasta file to search.')
+parser.add_argument('--outfile','-o',type=argparse.FileType('w',encoding='UTF-8'),required=True,help='Outfile (will be in bed format).')
 args=parser.parse_args()
 
 d=[]
