@@ -70,6 +70,18 @@ python metaplot.py \
 
 ## Gen[etic|omic]
 
+`alignmentConverstion.py`. Converts a multi-sequence alignment (MSA) file of one format to a different format (e.g., fasta to phyip).
+
+Usage:
+
+```bash
+python alignmentConversion.py \
+--infile=<msa> \
+--in_format=<format e.g., fasta> \
+--outfile=<output filename> \
+--out_format=<format e.g., phylip-relaxed>
+```
+
 `extractSeqFromFasta.py`. A very straightforward script to extract a set of sequence(s) from a fasta file based on id.
 
 Usage:
