@@ -20,8 +20,8 @@ parser.add_argument('--out_format','-of',
                     help='Outfile format e.g., "fasta", "phylip", "clustal". FYI "phylip-relaxed" is supported by RAxML.')
 args=parser.parse_args()
 
-alignments = AlignIO.parse(args.infile, args.in_format)
-AlignIO.write(alignments, args.outfile, args.out_format)
+alignments=AlignIO.parse(args.infile,args.in_format)
+AlignIO.write(alignments,args.outfile,args.out_format)
 
 args.outfile.close()
 args.infile.close()
