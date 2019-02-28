@@ -36,5 +36,5 @@ if args.taxa=="plant":
     per_site_mC(df,args.coverage,['CG','CHG','CHH'])
 elif args.taxa=="animal":
     df['con']=df['con'].replace(regex={r'CG[A|C|G|T|N]':'CG',
-                                        r'C[A|C|T|N][A|C|T|N]':'CH'})
+                                        r'C[A|C|T|N][A|C|G|T|N]':'CH'})
     per_site_mC(df,args.coverage,['CG','CH'])
