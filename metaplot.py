@@ -35,7 +35,7 @@ args=parser.parse_args()
 
 def allc_to_bed(d,bed=True):
     if args.taxa=='animal':
-        d['con']=d['con'].replace(regex={r'CG[A|C|G|T|N]':'CG',r'C[A|C|G|T|N][A|C|G|T|N]':'CH'})
+        d['con']=d['con'].replace(regex={r'CG[A|C|G|T|N]':'CG',r'C[A|C|T|N][A|C|G|T|N]':'CH'})
     elif args.taxa=='plant':
         d['con']=d['con'].replace(regex={r'CG[A|C|G|T|N]':'CG',r'C[A|C|T|N]G':'CHG',r'C[A|C|T|N][A|C|T|N]':'CHH'})
     new_col=d['pos']
