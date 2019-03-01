@@ -6,7 +6,7 @@ import pybedtools as pbt
 import numpy as np
 pd.options.mode.chained_assignment=None
 
-parser=argparse.ArgumentParser(description='Under construction.')
+parser=argparse.ArgumentParser(description='Creates a tab-delimited file to generate a metaplot figure.')
 parser.add_argument('--allc','-i',type=argparse.FileType('r',encoding='UTF-8'),
                                     required=True,
                                     help='Allc file generated (preferably) by methylpy.')
