@@ -109,6 +109,16 @@ python alignmentConversion.py \
 --out_format=<format e.g., phylip-relaxed>
 ```
 
+`createIntronGff.py`. Creates a GFF3 file of intron features for each gene given the exon coordinates. __Caution__: intron are not correctly _numbered_ for genes on the - strand.
+
+Usage:
+
+```bash
+python createIntronGff.py \
+--in_gff=<gff[3] infile> \
+--out_gff=<intron gff3 outfile>
+```
+
 `extractSeqFromFasta.py`. A very straightforward script to extract a set of sequence(s) from a fasta file based on id.
 
 Usage:
